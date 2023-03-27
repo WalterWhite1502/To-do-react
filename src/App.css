@@ -1,38 +1,108 @@
-.App {
-  text-align: center;
+body{
+  background-color: darkcyan ;
+  background-size: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.content{
+  display: grid;
+  grid-row: 5fr 5fr;
+  gap: 20px;
+  width: 90%;
+  max-width: 34em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid black;
+  width: fit-content;
+  border-radius: 8px;
+  border: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.TodoForm{
+  
+  position: relative;
+  background-color: #ffffff;
+  font-size: 20px;
+  padding: 1.8em 1.25em;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 9fr 3fr;
+  gap: 1em;
+  font-family:sans-serif;
+  font-weight: 700;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.input{
+  font-size: 17px;
+  padding: 0.8em 0.5em;
+  border:none;
+  border-bottom:1px solid black;
+  font-family:sans-serif;
+  font-weight: 500;
+}
+
+.input :focus{
+  border-color: black;
+}
+
+.btn{
+  cursor: pointer;
+  font-size: 18px;
+  padding: 10px;
+  background-color: darkcyan;
+  border-radius: 8px;
+  color: rgb(255, 255, 255);
+  font-family:sans-serif;
+  font-weight: 600;
+  border: none;
+}
+
+.btn:hover{
+  background-color:cadetblue;
+}
+
+.Clear{
+  cursor: pointer;
+  font-size: 18px;
+  padding: 10px;
+  background-color: darkcyan;
+  border-radius: 8px;
+  color: rgb(255, 255, 255);
+  font-family:sans-serif;
+  font-weight: 600;
+  border: none;
+}
+
+.Clear:hover{
+  text-decoration: underline;
+}
+
+.list{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 20px;
+  font-family: sans-serif;
+  gap: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.list i{
+  color: red;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.list i:hover{
+  color: green;
 }
+
+.listItem{
+  border-bottom: 1px solid grey;
+  padding-bottom: 8px;
+  gap: 10px;
+}
+
